@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/zhuzhuangtujar/gnujaxp-1.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/zhuzhuangtujar/jfreechart-1.0.13.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/Microsoft JDBC Driver 6.0 for SQL Server/jxl.jar"/>
+	<classpathentry kind="src" path="/yiqing"/>
+	<classpathentry kind="lib" path="D:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/servlet-api.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://javaee.github.io/javaee-spec/javadocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/sqlserver驱动包/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/poi-4.1.2/poi-4.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/poi-4.1.2/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/poi-4.1.2/poi-scratchpad-4.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/Microsoft JDBC Driver 6.0 for SQL Server/sqljdbc_6.0/chs/jre7/sqljdbc41.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/xmlbeans-3.1.0/lib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/commons-collections4-4.4/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files (x86)/java/zhuzhuangtujar/jcommon-1.0.16.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
