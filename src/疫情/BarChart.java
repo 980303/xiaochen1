@@ -1,4 +1,4 @@
-package ÒßÇé;
+package ç–«æƒ…;
 
 import java.awt.Font;
 import org.jfree.chart.ChartFactory;
@@ -15,34 +15,34 @@ import javax.swing.JFrame;
 public class BarChart {
 	ChartPanel frame1;
 	public  BarChart(){
-		CategoryDataset dataset = getDataSet();//½«»ñµÃµÄÊı¾İ´«µİ¸øCategoryDatasetÀàµÄ¶ÔÏó
+		CategoryDataset dataset = getDataSet();//å°†è·å¾—çš„æ•°æ®ä¼ é€’ç»™CategoryDatasetç±»çš„å¯¹è±¡
        JFreeChart chart = ChartFactory.createBarChart3D(
-      		                 "ÒßÇéÍ³¼Æ", // Í¼±í±êÌâ
-                           "ÊÇ·ñÈ·Õï", // Ä¿Â¼ÖáµÄÏÔÊ¾±êÇ©
-                           "ÈËÊı", // ÊıÖµÖáµÄÏÔÊ¾±êÇ©
-                           dataset, // Êı¾İ¼¯
-                           PlotOrientation.VERTICAL, // Í¼±í·½Ïò£ºË®Æ½¡¢´¹Ö±
-                           true, // ÊÇ·ñÏÔÊ¾Í¼Àı(¶ÔÓÚ¼òµ¥µÄÖù×´Í¼±ØĞëÊÇfalse)
-                           false,  // ÊÇ·ñÉú³É¹¤¾ß
-                           false  // ÊÇ·ñÉú³ÉURLÁ´½Ó
+      		                 "ç–«æƒ…ç»Ÿè®¡", // å›¾è¡¨æ ‡é¢˜
+                           "æ˜¯å¦ç¡®è¯Š", // ç›®å½•è½´çš„æ˜¾ç¤ºæ ‡ç­¾
+                           "äººæ•°", // æ•°å€¼è½´çš„æ˜¾ç¤ºæ ‡ç­¾
+                           dataset, // æ•°æ®é›†
+                           PlotOrientation.VERTICAL, // å›¾è¡¨æ–¹å‘ï¼šæ°´å¹³ã€å‚ç›´
+                           true, // æ˜¯å¦æ˜¾ç¤ºå›¾ä¾‹(å¯¹äºç®€å•çš„æŸ±çŠ¶å›¾å¿…é¡»æ˜¯false)
+                           false,  // æ˜¯å¦ç”Ÿæˆå·¥å…·
+                           false  // æ˜¯å¦ç”ŸæˆURLé“¾æ¥
                            );
       
-       CategoryPlot plot=chart.getCategoryPlot();//»ñÈ¡Í¼±íÇøÓò¶ÔÏó
-       CategoryAxis domainAxis=plot.getDomainAxis();         //Ë®Æ½µ×²¿ÁĞ±í
-        domainAxis.setLabelFont(new Font("ºÚÌå",Font.BOLD,14));         //Ë®Æ½µ×²¿±êÌâ
-        domainAxis.setTickLabelFont(new Font("ËÎÌå",Font.BOLD,12));  //´¹Ö±±êÌâ
-        ValueAxis rangeAxis=plot.getRangeAxis();//»ñÈ¡Öù×´
-        rangeAxis.setLabelFont(new Font("ºÚÌå",Font.BOLD,15));
-         chart.getLegend().setItemFont(new Font("ºÚÌå", Font.BOLD, 15));
-         chart.getTitle().setFont(new Font("ËÎÌå",Font.BOLD,20));//ÉèÖÃ±êÌâ×ÖÌå
+       CategoryPlot plot=chart.getCategoryPlot();//è·å–å›¾è¡¨åŒºåŸŸå¯¹è±¡
+       CategoryAxis domainAxis=plot.getDomainAxis();         //æ°´å¹³åº•éƒ¨åˆ—è¡¨
+        domainAxis.setLabelFont(new Font("é»‘ä½“",Font.BOLD,14));         //æ°´å¹³åº•éƒ¨æ ‡é¢˜
+        domainAxis.setTickLabelFont(new Font("å®‹ä½“",Font.BOLD,12));  //å‚ç›´æ ‡é¢˜
+        ValueAxis rangeAxis=plot.getRangeAxis();//è·å–æŸ±çŠ¶
+        rangeAxis.setLabelFont(new Font("é»‘ä½“",Font.BOLD,15));
+         chart.getLegend().setItemFont(new Font("é»‘ä½“", Font.BOLD, 15));
+         chart.getTitle().setFont(new Font("å®‹ä½“",Font.BOLD,20));//è®¾ç½®æ ‡é¢˜å­—ä½“
 
-        frame1=new ChartPanel(chart,true);  //ÕâÀïÒ²¿ÉÒÔÓÃchartFrame,¿ÉÒÔÖ±½ÓÉú³ÉÒ»¸ö¶ÀÁ¢µÄFrame
+        frame1=new ChartPanel(chart,true);  //è¿™é‡Œä¹Ÿå¯ä»¥ç”¨chartFrame,å¯ä»¥ç›´æ¥ç”Ÿæˆä¸€ä¸ªç‹¬ç«‹çš„Frame
         
 	}
 	   private static CategoryDataset getDataSet() {
           DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-          dataset.addValue(100, "ÊÇ", "ÊÇ");
-          dataset.addValue(40, "·ñ", "·ñ");
+          dataset.addValue(2, "æ˜¯", "æ˜¯");
+          dataset.addValue(6, "å¦", "å¦");
           return dataset;
 	   }
 	   public ChartPanel getChartPanel(){
@@ -50,10 +50,10 @@ public class BarChart {
 	
 	   	}
 	   public static void main(String args[]){
-		   JFrame frame=new JFrame("ÒßÇéÍ³¼Æ");
+		   JFrame frame=new JFrame("ç–«æƒ…ç»Ÿè®¡");
 		   frame.setLayout(new GridLayout(2,2,10,10));
-		   frame.add(new BarChart().getChartPanel());   //Ìí¼ÓÖùĞÎÍ¼
-		   frame.setBounds(0, 0, 900, 800);
+		   frame.add(new BarChart().getChartPanel());   //æ·»åŠ æŸ±å½¢å›¾
+		   frame.setBounds(0, 0, 500, 700);
 		   frame.setVisible(true);
 	   }
 }
